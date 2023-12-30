@@ -13,11 +13,9 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import io.github.slimefunguguproject.bump.api.appraise.AppraiseType;
-
-import net.guizhanss.guizhanlib.slimefun.addon.AddonConfig;
-
 import lombok.Getter;
 import lombok.Setter;
+import net.guizhanss.guizhanlib.slimefun.addon.AddonConfig;
 
 /**
  * This class holds {@link Map Maps} and {@link List Lists} related to Bump.
@@ -46,4 +44,34 @@ public final class BumpRegistry {
     public BumpRegistry(JavaPlugin plugin, AddonConfig config) {
         this.config = config;
     }
+
+	public Map<Byte, Byte> getStarThresholds() {
+		// TODO Auto-generated method stub
+		return starThresholds;
+	}
+
+	public Map<NamespacedKey, AppraiseType> getAppraiseTypeKeys() {
+		// TODO Auto-generated method stub
+		return appraiseTypeKeys;
+	}
+
+	public Set<AppraiseType> getAppraiseTypes() {
+		// TODO Auto-generated method stub
+		return appraiseTypes;
+	}
+
+	public void setLanguage(String lang) {
+		// TODO Auto-generated method stub
+		this.language = lang;
+	}
+
+	public AddonConfig getConfig() {
+		// TODO Auto-generated method stub
+		return config;
+	}
+
+	public String getLanguage() {
+		// TODO Auto-generated method stub
+		return language;
+	}
 }

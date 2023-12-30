@@ -27,7 +27,6 @@ import io.github.slimefunguguproject.bump.implementation.Bump;
  * @author ybw0014
  * @author haiman233
  */
-@SuppressWarnings("ConstantConditions")
 public enum BumpTag implements Tag<Material> {
     /**
      * This includes all swords.

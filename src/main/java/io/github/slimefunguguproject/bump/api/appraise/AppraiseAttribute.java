@@ -74,7 +74,27 @@ public final class AppraiseAttribute {
         }
     }
 
-    @Override
+    public double getWeight() {
+		// TODO Auto-generated method stub
+		return weight;
+	}
+
+    public double getMax() {
+		// TODO Auto-generated method stub
+		return max;
+	}
+
+	public double getMin() {
+		// TODO Auto-generated method stub
+		return min;
+	}
+
+	public Attribute getAttribute() {
+		// TODO Auto-generated method stub
+		return attribute;
+	}
+
+	@Override
     public int hashCode() {
         int hash = 5;
         hash = 47 * hash + this.attribute.hashCode();

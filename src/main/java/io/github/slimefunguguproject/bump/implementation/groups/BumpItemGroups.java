@@ -1,14 +1,12 @@
 package io.github.slimefunguguproject.bump.implementation.groups;
 
 import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-
-import io.github.slimefunguguproject.bump.implementation.Bump;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 import dev.sefiraat.sefilib.slimefun.itemgroup.DummyItemGroup;
 import dev.sefiraat.sefilib.slimefun.itemgroup.SimpleFlexGroup;
+import io.github.slimefunguguproject.bump.implementation.Bump;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import lombok.experimental.UtilityClass;
 
 /**
@@ -28,13 +26,14 @@ public final class BumpItemGroups {
         )
     );
 
+    /*
     public static final ItemStack WIKI = new CustomItemStack(
         Material.KNOWLEDGE_BOOK,
         Bump.getLocalization().getCategoryName("wiki"),
         "",
         Bump.getLocalization().getString("lores.click-to-open")
     );
-
+    */
     public static final ItemGroup STUFF = new DummyItemGroup(
         Bump.createKey("stuff"),
         new CustomItemStack(

@@ -128,7 +128,7 @@ public final class AppraiseSetup {
         }
     }
 
-    private void setDefaultStarThreshold(@Nonnull Map<Byte, Byte> starThreshold) {
+    private static void setDefaultStarThreshold(@Nonnull Map<Byte, Byte> starThreshold) {
         starThreshold.clear();
         starThreshold.put((byte) 100, (byte) 20);
         starThreshold.put((byte) 98, (byte) 10);

@@ -31,7 +31,7 @@ import net.md_5.bungee.api.chat.TextComponent;
  *
  * @author ybw0014
  */
-@SuppressWarnings({"ConstantConditions", "java:S1192"})
+@SuppressWarnings({"java:S1192"})
 public final class LocalizationService extends MinecraftLocalization {
     private static final String NULL_RECIPE_TYPE_MESSAGE = "RecipeType Id cannot be null";
 

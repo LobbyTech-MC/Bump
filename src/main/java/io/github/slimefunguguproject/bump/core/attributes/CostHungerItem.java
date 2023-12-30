@@ -17,7 +17,6 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.ItemAttribute;
  *
  * @author ybw0014
  */
-@SuppressWarnings("ConstantConditions")
 public interface CostHungerItem extends ItemAttribute {
     /**
      * This method returns the {@link ItemSetting} of hunger cost.

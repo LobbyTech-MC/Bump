@@ -21,7 +21,6 @@ import lombok.experimental.UtilityClass;
  * @author ybw0014
  */
 @UtilityClass
-@SuppressWarnings("ConstantConditions")
 public final class GuiItems {
     public static final ItemStack APPRAISE_BUTTON = new CustomItemStack(
         Material.NAME_TAG,

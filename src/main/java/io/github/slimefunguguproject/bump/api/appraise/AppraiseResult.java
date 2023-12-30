@@ -35,7 +35,6 @@ import lombok.Getter;
  * @author ybw0014
  */
 @Getter
-@SuppressWarnings("ConstantConditions")
 public final class AppraiseResult {
     /**
      * This is a reference to the {@link AppraiseType} that generates this {@link AppraiseResult}.

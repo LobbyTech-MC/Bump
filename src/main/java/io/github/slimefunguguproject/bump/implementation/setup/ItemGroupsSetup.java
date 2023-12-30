@@ -20,6 +20,7 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public final class ItemGroupsSetup {
     public static void setup(@Nonnull SlimefunAddon addon) {
+    	/*
         final MenuItem wikiMenuItem = new MenuItem(BumpItemGroups.WIKI, (p, slot, item, action) -> {
             p.closeInventory();
 
@@ -37,8 +38,9 @@ public final class ItemGroupsSetup {
 
             return false;
         });
+        */
 
-        BumpItemGroups.MAIN.addMenuItem(wikiMenuItem);
+        // BumpItemGroups.MAIN.addMenuItem(wikiMenuItem);
         BumpItemGroups.MAIN.addItemGroup(BumpItemGroups.STUFF);
         BumpItemGroups.MAIN.addItemGroup(BumpItemGroups.FOOD);
         BumpItemGroups.MAIN.addItemGroup(BumpItemGroups.MACHINE);

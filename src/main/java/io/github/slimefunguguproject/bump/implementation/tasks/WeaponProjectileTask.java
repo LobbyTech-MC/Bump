@@ -21,7 +21,6 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.Persis
  *
  * @author ybw0014
  */
-@SuppressWarnings("ConstantConditions")
 public final class WeaponProjectileTask implements Runnable {
 
     private static WeaponProjectileTask instance;

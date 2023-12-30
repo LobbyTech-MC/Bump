@@ -24,18 +24,14 @@ import io.github.slimefunguguproject.bump.utils.Utils;
 import io.github.slimefunguguproject.bump.utils.constant.Strings;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
 /**
  * This menu displays the details of an {@link AppraiseType}.
  *
  * @author ybw0014
  */
-@RequiredArgsConstructor
 public final class AppraiseTypeMenu {
     private static final int GUIDE_BACK = 0;
 
@@ -52,7 +48,13 @@ public final class AppraiseTypeMenu {
     @NonNull
     public final Runnable backCallback;
 
-    /**
+    public AppraiseTypeMenu(AppraiseType appraiseType, Runnable backCallback) {
+		// TODO Auto-generated constructor stub
+    	this.appraiseType = appraiseType;
+    	this.backCallback = backCallback;
+	}
+
+	/**
      * Open the menu to {@link Player}.
      *
      * @param p The {@link Player} to open the menu to.

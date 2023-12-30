@@ -7,30 +7,26 @@ import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.google.common.base.Preconditions;
-
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import com.google.common.base.Preconditions;
+
 import io.github.slimefunguguproject.bump.api.appraise.AppraiseType;
 import io.github.slimefunguguproject.bump.implementation.Bump;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
 /**
  * This class will open a menu with all {@link AppraiseType}.
  *
  * @author ybw0014
  */
-@SuppressWarnings("ConstantConditions")
-@RequiredArgsConstructor
+
 public abstract class AppraiseTypesMenu {
     private static final int PAGE_SIZE = 36;
 
@@ -64,7 +60,14 @@ public abstract class AppraiseTypesMenu {
     @NonNull
     private final Runnable backCallback;
 
-    /**
+    public AppraiseTypesMenu(String name, Consumer<AppraiseType> successCallback, Runnable backCallback) {
+		// TODO Auto-generated constructor stub
+    	this.name = name;
+    	this.successCallback = successCallback;
+    	this.backCallback = backCallback;
+	}
+
+	/**
      * Open the menu to {@link Player}.
      *
      * @param p The {@link Player} to open the menu to.

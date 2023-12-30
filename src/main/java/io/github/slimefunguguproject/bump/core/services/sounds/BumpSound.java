@@ -23,7 +23,6 @@ import lombok.RequiredArgsConstructor;
  */
 @Getter
 @RequiredArgsConstructor
-@SuppressWarnings("ConstantConditions")
 public enum BumpSound {
     APPRAISAL_INSTRUMENT_FAIL(Sound.ENTITY_VILLAGER_NO, 1.0F, 1.0F),
     APPRAISAL_INSTRUMENT_SUCCEED(Sound.ENTITY_VILLAGER_CELEBRATE, 1.0F, 1.0F),
@@ -104,4 +103,19 @@ public enum BumpSound {
 
         playAt(block.getLocation(), SoundCategory.BLOCKS);
     }
+
+    public String getSound() {
+		// TODO Auto-generated method stub
+		return sound;
+	}
+
+	public float getVolume() {
+		// TODO Auto-generated method stub
+		return volume;
+	}
+
+	public float getPitch() {
+		// TODO Auto-generated method stub
+		return pitch;
+	}
 }

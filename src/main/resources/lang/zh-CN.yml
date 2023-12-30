@@ -1,14 +1,14 @@
 ---
 categories:
-  main: "&bBump"
-  armor: "&bBump - 护甲"
-  food: "&bBump - 食物"
-  machine: "&bBump - 机器"
-  stuff: "&bBump - 魔法物品"
-  tool: "&bBump - 工具"
-  weapon: "&bBump - 魔法武器"
-  appraise_info: "&eBump - 鉴定类型信息"
-  wiki: "&eBump - Wiki"
+  main: "&b魔幻科技"
+  armor: "&b魔幻科技 - 护甲"
+  food: "&b魔幻科技 - 食物"
+  machine: "&b魔幻科技 - 机器"
+  stuff: "&b魔幻科技 - 魔法物品"
+  tool: "&b魔幻科技 - 工具"
+  weapon: "&b魔幻科技 - 魔法武器"
+  appraise_info: "&e魔幻科技 - 鉴定类型信息"
+  wiki: "&e魔幻科技 - 维基百科"
 items:
   random_helmet:
     name: "&6随机头盔"

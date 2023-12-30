@@ -20,7 +20,6 @@ import lombok.experimental.UtilityClass;
  * @author ybw0014
  */
 @UtilityClass
-@SuppressWarnings("ConstantConditions")
 public final class Utils {
     /**
      * Get a {@link String} of consecutive stars, maximum at 10.

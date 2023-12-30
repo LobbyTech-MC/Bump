@@ -47,7 +47,6 @@ import lombok.experimental.Accessors;
  * @author ybw0014
  */
 @Accessors(makeFinal = true)
-@SuppressWarnings("ConstantConditions")
 public class AppraiseType {
     /**
      * This is the {@link NamespacedKey} of {@link AppraiseType}.
@@ -223,7 +222,12 @@ public class AppraiseType {
         }
     }
 
-    /**
+    private String getPermission() {
+		// TODO Auto-generated method stub
+		return permission;
+	}
+
+	/**
      * Set if this {@link AppraiseType} check item material when appraising.
      *
      * @param value Whether to check item material.
@@ -475,7 +479,17 @@ public class AppraiseType {
         };
     }
 
-    /**
+    public EquipmentType getEquipmentType() {
+		// TODO Auto-generated method stub
+		return equipmentType;
+	}
+
+	public boolean checkMaterial() {
+		// TODO Auto-generated method stub
+		return checkMaterial;
+	}
+
+	/**
      * This is the default method to check if a {@link SlimefunItem} fit this {@link AppraiseType}.
      *
      * @param sfItem The {@link SlimefunItem} to be checked.
@@ -543,4 +557,34 @@ public class AppraiseType {
          */
         VANILLA
     }
+
+	public Set<EquipmentSlot> getValidEquipmentSlots() {
+		// TODO Auto-generated method stub
+		return  validEquipmentSlots;
+	}
+
+	public NamespacedKey getKey() {
+		// TODO Auto-generated method stub
+		return key;
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+	public Set<AppraiseAttribute> getAttributes() {
+		// TODO Auto-generated method stub
+		return attributes;
+	}
+
+	public Set<Material> getValidMaterials() {
+		// TODO Auto-generated method stub
+		return validMaterials;
+	}
+
+	public List<String> getDescription() {
+		// TODO Auto-generated method stub
+		return description;
+	}
 }
