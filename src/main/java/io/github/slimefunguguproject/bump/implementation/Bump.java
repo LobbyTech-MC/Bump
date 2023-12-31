@@ -164,6 +164,7 @@ public final class Bump extends AbstractAddon {
 
     @Override
     protected void autoUpdate() {
+    	/*
         try {
             // use updater in lib plugin
             Class<?> clazz = Class.forName("net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater");
@@ -173,6 +174,7 @@ public final class Bump extends AbstractAddon {
             // use updater in lib
             new GuizhanBuildsUpdater(this, getFile(), getGithubUser(), getGithubRepo(), getGithubBranch()).start();
         }
+        */
     }
 
     @Nonnull
